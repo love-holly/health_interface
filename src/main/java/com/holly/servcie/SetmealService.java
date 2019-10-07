@@ -6,6 +6,7 @@ import com.holly.pojo.CheckGroup;
 import com.holly.pojo.Setmeal;
 
 import java.util.List;
+import java.util.Map;
 
 public interface SetmealService {
 
@@ -18,4 +19,7 @@ public interface SetmealService {
     List<Setmeal> findgetSetmeal();
 
     Setmeal findById(Integer id);
+
+    List<Map<String,Object>> findSetmealCount();
+
 }
